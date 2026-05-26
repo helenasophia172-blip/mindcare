@@ -1,0 +1,21 @@
+FTP
+if0_42018792 
+Senha FTP
+KS250625   
+Nome do host FTP
+ftpupload.net
+Porta FTP (opcional)
+21
+
+Nome de usuário do MySQL
+if0_42018792 
+Senha do MySQL
+KS250625   
+Nome do banco de dados MySQL
+if0_42018792_XXX
+See below for available database names
+Nome do host MySQL
+sql113.infinityfree.com
+Porta MySQL (opcional)
+3306
+if0_42018792_mindcared
