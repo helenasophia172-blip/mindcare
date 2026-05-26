@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas - MindCare</title>
+    <style>
+        /* Cores baseadas na sua imagem */
+        :root {
+            --roxo-fundo: #D1B2E0;   /* Roxo claro do fundo */
+            --roxo-painel: #9D69A3;  /* Roxo do botão Login/Destaques */
+            --verde-menu: #A2B29F;   /* Verde oliva do menu lateral */
+            --branco: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--roxo-fundo);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        /* Container que simula o painel central do seu site */
+        .main-panel {
+            width: 90%;
+            max-width: 1100px;
+            background-color: rgba(255, 255, 255, 0.2); /* Transparência para ver o fundo */
+            margin: 40px 0;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .header-section {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Grid de Cards */
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* Estilo Blog dos Cards */
+        .blog-card {
+            background: var(--branco);
+            border-radius: 15px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-tag {
+            background-color: var(--roxo-painel);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .card-title {
+            margin: 15px 0 10px 0;
+            font-size: 1.6rem; /* Escrita grande estilo Blog */
+            line-height: 1.2;
+            color: #2d2d2d;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Botão para voltar ao site principal */
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background: var(--verde-menu);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-panel">
+        <a href="index.html" class="btn-voltar">← Voltar ao Início</a>
+
+        <div class="header-section">
+            <h1>Dicas de Cuidado Mental</h1>
+            <p>Pequenos passos para uma mente mais tranquila.</p>
+        </div>
+
+        <div class="cards-container">
+            
+            <article class="blog-card">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=600')"></div>
+                <div class="card-body">
+                    <span class="card-tag">Bem-estar</span>
+                    <h2 class="card-title">Como o silêncio ajuda a organizar os pensamentos</h2>
+                    <p class="card-text">Praticar 5 minutos de silêncio absoluto por dia pode reduzir drasticamente o nível de cortisol no seu corpo.</p>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="card-image" style="background-image: url(img/escrever.jpg)"></div>
+                <div class="card-body">
+                    <span class="card-tag">Hábito</span>
+                    <h2 class="card-title">A importância de escrever o que você sente</h2>
+                    <p class="card-text">Manter um diário de gratidão ou apenas desabafar no papel ajuda a processar traumas e ansiedades acumuladas.</p>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=600')"></div>
+                <div class="card-body">
+                    <span class="card-tag">Apoio</span>
+                    <h2 class="card-title">Quando é a hora certa de procurar ajuda profissional?</h2>
+                    <p class="card-text">Saiba identificar os sinais de que sua mente precisa de um suporte especializado e como dar o primeiro passo.</p>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="card-image" style="background-image: url(img/depressao.jpg)"></div>
+                <div class="card-body">
+                    <span class="card-tag">Apoio</span>
+                    <h2 class="card-title">Depressão: Além da Tristeza</h2>
+                    <p class="card-text">Aprenda a diferenciar a tristeza profunda de um episódio depressivo clínico.</p>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="card-image" style="background-image: url(img/psicosocial.jpg)"></div>
+                <div class="card-body">
+                    <span class="card-tag">Apoio</span>
+                    <h2 class="card-title">Reablitação Psicossocial</h2>
+                    <p class="card-text">A importância da reintegração ao trabalho e estudo como forma de recuperar funções cognitivas</p>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="card-image" style="background-image: url(img/autoestigma.jpg)"></div>
+                <div class="card-body">
+                    <span class="card-tag">Apoio</span>
+                    <h2 class="card-title">Combate a Autoestigma</h2>
+                    <p class="card-text">Estratégias para fortalecer a identidade pessoal além do diagnóstico clínico</p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+</body>
+</html>

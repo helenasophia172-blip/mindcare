@@ -1,0 +1,175 @@
+/* --- RESET E BASES (IGUAL AO SEU INDEX) --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('img/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #D1B2E0; /* Sua cor de fundo padrão */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- TOPO (PADRÃO INDEX) --- */
+.topo-site { 
+    background: white; 
+    height: 70px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 8%; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-wrapper img { height: 45px !important; }
+.logo-texto { color: #9D69A3; font-weight: bold; font-size: 1.4rem; }
+.menu-topo a { text-decoration: none; color: #666; margin-left: 25px; transition: 0.3s; }
+
+/* --- ESTRUTURA DO DASHBOARD --- */
+.dashboard-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    flex: 1;
+}
+
+/* --- MENU LATERAL (ESTILO CARD DO INDEX) --- */
+.menu-viva {
+    background: #F3E5F5; /* Cor suave dos seus cards */
+    border-radius: 20px;
+    padding: 25px;
+    height: fit-content;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.menu-viva h4 { color: #4A2B52; margin-bottom: 20px; }
+.menu-viva ul { list-style: none; }
+.menu-viva li a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #4A2B52;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.menu-viva li a:hover {
+    background: #9D69A3;
+    color: white;
+}
+
+/* --- ÁREA DO CHAT --- */
+.chat-viva {
+    background: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+#chat-mensagens {
+    flex: 1;
+    padding: 25px;
+    overflow-y: auto;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* --- BALÕES DE CHAT (ESTILO BALÃO) --- */
+.bot-msg, .user-msg {
+    max-width: 75%;
+    padding: 15px 20px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* MindCare (Usando seu Roxo Principal) */
+.bot-msg {
+    align-self: flex-start;
+    background: #9D69A3;
+    color: white;
+    border-radius: 18px 18px 18px 4px;
+}
+
+/* Usuário (Usando o Verde do seu Index) */
+.user-msg {
+    align-self: flex-end;
+    background: #A3B18A;
+    color: white;
+    border-radius: 18px 18px 4px 18px;
+}
+
+.bot-msg strong, .user-msg strong {
+    display: block;
+    font-size: 0.7rem;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+/* --- INPUT E BOTÃO --- */
+.chat-input-area {
+    padding: 20px;
+    background: white;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 15px;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 2px solid #F3E5F5;
+    outline: none;
+}
+
+.chat-input-area input:focus { border-color: #9D69A3; }
+
+.btn-enviar {
+    background: #9D69A3;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover { background: #4A2B52; }
+
+/* --- RODAPÉ --- */
+.rodape-final { 
+    background-color: #7b4d83; 
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; 
+}
+
+/* --- ANIMAÇÃO DE ENTRADA (MANTIDA) --- */
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+.animar-entrada { animation: fadeInUp 0.8s ease forwards; }
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 850px) {
+    .dashboard-container { grid-template-columns: 1fr; }
+    .menu-viva { display: none; }
+}

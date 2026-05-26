@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canais de Apoio - MindCare</title>
+    <style>
+        :root {
+            --roxo-fundo: #D1B2E0;
+            --roxo-escuro: #5a3e63;
+            --verde-suporte: #A2B29F;
+            --urgencia: #e74c3c;
+            --branco: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--roxo-fundo);
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .header-apoio {
+            text-align: center;
+            background: var(--branco);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .header-apoio h1 {
+            color: var(--roxo-escuro);
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        /* Destaque para o CVV */
+        .emergency-box {
+            background: var(--urgencia);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .emergency-number {
+            font-size: 4rem;
+            font-weight: 900;
+            margin: 10px 0;
+        }
+
+        .emergency-btn {
+            background: white;
+            color: var(--urgencia);
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        .emergency-btn:hover {
+            transform: scale(1.05);
+            background: #fdfdfd;
+        }
+
+        /* Lista de outros apoios */
+        .support-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .support-item {
+            background: var(--branco);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 6px solid var(--verde-suporte);
+        }
+
+        .support-item h3 {
+            margin-top: 0;
+            color: var(--roxo-escuro);
+        }
+
+        .support-item p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--verde-suporte);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn-voltar {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            color: var(--roxo-escuro);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .support-grid { grid-template-columns: 1fr; }
+            .emergency-number { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="header-apoio">
+        <h1>Você não está sozinho</h1>
+        <p>Se você está passando por um momento difícil, saiba que existem pessoas prontas para te ouvir agora mesmo.</p>
+    </div>
+
+    <div class="emergency-box">
+        <span>CENTRO DE VALORIZAÇÃO DA VIDA (CVV)</span>
+        <div class="emergency-number">188</div>
+        <p>Atendimento gratuito, sigiloso e disponível 24h por dia.</p>
+        <a href="tel:188" class="emergency-btn">Ligar Agora</a>
+    </div>
+
+    <div class="support-grid">
+        
+        <div class="support-item">
+            <h3>CAPS</h3>
+            <p>Os Centros de Atenção Psicossocial são unidades do SUS onde você pode buscar ajuda especializada sem agendamento.</p>
+            <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-mental/caps" target="_blank" class="btn-link">Encontrar um CAPS →</a>
+        </div>
+
+        <div class="support-item">
+            <h3>Emergência Médica (SAMU)</h3>
+            <p>Em caso de crise grave ou risco imediato à vida, não hesite em chamar o suporte médico de urgência.</p>
+            <a href="tel:192" class="btn-link">Disque 192</a>
+        </div>
+
+        <div class="support-item">
+            <h3>Chat do CVV</h3>
+            <p>Se você prefere não falar por telefone, o CVV oferece atendimento via chat online em horários específicos.</p>
+            <a href="https://www.cvv.org.br/chat/" target="_blank" class="btn-link">Acessar Chat →</a>
+        </div>
+
+        <div class="support-item">
+            <h3>Pode Falar (UNICEF)</h3>
+            <p>Um canal de ajuda em saúde mental para jovens de 13 a 24 anos. Um espaço seguro para desabafar.</p>
+            <a href="https://www.podefalar.org.br/" target="_blank" class="btn-link">Conhecer Site →</a>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="btn-voltar">← Voltar para o MindCare</a>
+
+</div>
+
+</body>
+</html>

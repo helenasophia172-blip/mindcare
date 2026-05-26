@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - MindCare</title>
+    <style>
+        :root {
+            --roxo-fundo: #D1B2E0;
+            --roxo-escuro: #5a3e63;
+            --verde-menu: #A2B29F;
+            --branco: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--roxo-fundo);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .about-container {
+            background: var(--branco);
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 30px;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        /* Lado da Foto */
+        .photo-side {
+            flex: 1;
+            background-color: #f4f0f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            position: relative;
+        }
+
+        .photo-wrapper {
+            width: 320px;
+            height: 450px;
+            border-radius: 160px; /* Formato de pílula elegante */
+            overflow: hidden;
+            border: 8px solid var(--roxo-fundo);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .photo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Lado do Texto */
+        .text-side {
+            flex: 1.2;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-side span {
+            color: var(--verde-menu);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+        }
+
+        .text-side h1 {
+            color: var(--roxo-escuro);
+            font-size: 2.8rem;
+            margin: 10px 0 20px 0;
+        }
+
+        .text-side p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        /* Redes Sociais / Contato */
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-btn {
+            text-decoration: none;
+            color: white;
+            background: var(--roxo-escuro);
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .social-btn:hover {
+            background: var(--verde-menu);
+            transform: translateY(-3px);
+        }
+
+        .back-link {
+            margin-top: 30px;
+            display: block;
+            color: #999;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        /* Responsivo para Celular */
+        @media (max-width: 850px) {
+            .about-container {
+                flex-direction: column;
+                margin: 20px;
+            }
+            .photo-wrapper {
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+            }
+            .text-side {
+                padding: 40px 30px;
+                text-align: center;
+            }
+            .social-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-container">
+        <div class="photo-side">
+            <div class="photo-wrapper">
+                <img src="https://via.placeholder.com/400x600" alt="Sua Foto">
+            </div>
+        </div>
+
+        <div class="text-side">
+            <span>Idealizadora do MindCare</span>
+            <h1>Olá, eu sou Sophia!</h1>
+            <p>
+                Minha missão com o MindCare é criar um refúgio digital onde a saúde mental é tratada com a prioridade e o carinho que merece. Acredito que a tecnologia pode ser uma ponte para o autoconhecimento e o acolhimento.
+            </p>
+            <p>
+                Este projeto nasceu da vontade de democratizar informações de qualidade e oferecer suporte para quem busca equilíbrio em meio ao caos do dia a dia. Seja bem-vindo ao nosso espaço de cuidado.
+            </p>
+            <p>
+                 Este projeto é um Trabalho Conclusivo de Curso diretamente ligado a Escola Técnica Estadual Padre Carlos Leôncio da Silva.
+            </p>
+
+            <div class="social-links">
+                <a href="#" class="social-btn">Instagram</a>
+                <a href="mailto:helenasophia172@gmail.com" class="social-btn">E-mail</a>
+            </div>
+
+            <a href="index.html" class="back-link">← Voltar ao início</a>
+        </div>
+    </div>
+
+</body>
+</html>
